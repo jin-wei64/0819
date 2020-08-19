@@ -9,7 +9,7 @@ create table employee
 ); 
 */
 
-$dbh = new PDO("mysql:host=localhost;dbname=class", "root", "password");
+$dbh = new PDO("mysql:host=localhost;dbname=class;port=8889;", "root", "root");
 $dbh->exec("SET CHARACTER SET utf8");
 
 $sth = $dbh->prepare("insert into employee (firstName, lastName, EmpType) values (:fname, :lname, :etype)");

@@ -4,7 +4,7 @@ header("content-type:text/html; charset=utf-8");
 // 0. 請先建立 Class 資料庫 （執行 class.sql）
 
 // 1. 連接資料庫伺服器
-$db = new PDO("mysql:host=localhost;dbname=class;port=3306", "root", "");
+$db = new PDO("mysql:host=localhost; dbname=class; port=8889", "root", "root");
 $db->exec("set names utf8");
 // $db->exec("set character set utf8");
 

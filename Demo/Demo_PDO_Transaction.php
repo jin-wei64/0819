@@ -1,6 +1,6 @@
 <?php
 
-$pdo = new PDO("mysql:host=127.0.0.1;dbname=northwind", 'root', '');
+$pdo = new PDO("mysql:host=127.0.0.1;dbname=northwind;port=8889;", 'root', 'root');
 
 try {
 	$pdo->beginTransaction();

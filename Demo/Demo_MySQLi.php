@@ -9,7 +9,7 @@
 <?php
 
 /*===========================[01]建立連接===========================*/
-$mysqli = new mysqli("localhost", "root", "", "class");
+$mysqli = new mysqli("localhost", "root", "root", "class" ,8889);
 /* 檢查連接狀態 */
 if (mysqli_connect_errno()) {
 	printf("連接失敗： %s\n", mysqli_connect_error());
